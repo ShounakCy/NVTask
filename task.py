@@ -32,7 +32,6 @@ def findroi(img):
     r_x=[]
     r_y=[]
     
-
     for i in range(1, mid_pixel):
         
         left_pixel = mid_pixel -i
@@ -50,13 +49,7 @@ def findroi(img):
             left = 1 + (mid_pixel - l_pixel)
                 
         i+=1
-    
-
-
-
-    #plt.bar(l_x, l_y)
-    #plt.savefig("plot_l.png")
-        
+   
     for j in range(1, mid_pixel):
         
         right_pixel = mid_pixel +j
@@ -74,14 +67,11 @@ def findroi(img):
         
         j+=1
     
-    
-    
     return left, right
 
 def find_contours(image_conn_crop):
 
     contours, hierarchy = cv2.findContours(image_conn_crop.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    #new_cont = approx_cont(contours, look_back=10)
     #print("Number of Contours found = " + str(len(contours)))
     #mask = np.zeros(image_conn_crop.shape, np.uint8)
     boundRect = [None]*len(contours)
@@ -105,7 +95,7 @@ def find_contours(image_conn_crop):
     return mask
 
 def find_defect(image):
-# Applaying Gaussian Blur on input image
+    # Applaying Gaussian Blur on input image
     image_blurred = cv2.GaussianBlur(image, (25, 25),0)
     #cv2.imwrite("image_blurred.png", image_blurred)
     # Applaying Sobel Edge detections
