@@ -7,7 +7,7 @@
 
 ## How did you approach the problem?
 
-### Steps Involved
+### Steps Involved (check `process.jpg` flowchat)
 `main.py`
 1. Read input image
 2. Applying Gaussian Blur on input image
