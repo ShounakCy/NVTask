@@ -42,4 +42,4 @@
 
 ## What external factors would you change to make the task easier (camera, lighting, etc.)
 
-In order to perform opencv techniques, I would keep the camera position fixed so that the croping of the coating could be fixed and constant illumination from the sides to avoid refecltion.
+In order to perform opencv techniques, I would keep the camera position fixed so that the croping of the coating could be fixed and constant illumination from the sides to avoid refecltion. I would keep coaxial forward lighting for detecting the defects, as it provides more uniform illumination than traditional lighting mode, while avoiding the reflection of the object.
