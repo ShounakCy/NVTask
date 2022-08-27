@@ -21,7 +21,7 @@
 10. Cropping the required region ( this can be done at the veru starting as well, if we assume that the starting and ending pixel of the coating is same of all pixels)
 11. Removed remaining small blobs
 12. Output image with contours around the defect pathces and mask.
-![alt text](https://github.com/ShounakCy/NVTask/blob/main/process.jpg)
+![alt text](https://github.com/ShounakCy/NVTask/blob/main/code2flow_7ZgRlA.png)
 ## What are the main challenges you have faced?
 
 1. Differentiating the foil and coating was difficult
