@@ -1,8 +1,6 @@
 import cv2
 import numpy as np
-
 import random as rng
-
 rng.seed(12345)
 
 class process():
@@ -13,8 +11,12 @@ class process():
         if show:
             cv2.imshow(f'Kernel: {kernel}', img)
         return img
-
+        
     def component(image, connectivity = 8, min_size = 100, show=False):
+        # Remove elements smaller than minimum size
+        # refer to https://stackoverflow.com/questions/42798659/how-to-remove-small-connected-objects-using-opencv
+        ## List all the related parts (white blobs in your image).
+        #Each discovered blob in the image # im with separated blobs has a unique pixel value ranging from 1 to nb blobs - 1.
         nb_components, output, stats, centroids = cv2.connectedComponentsWithStats(image, connectivity= connectivity)
         sizes = stats[1:, -1]
         nb_components = nb_components - 1

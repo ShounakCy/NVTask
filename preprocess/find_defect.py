@@ -6,6 +6,7 @@ from .handlers import process
 
 def main(input_image):
     
+    #Read image
     image = cv2.imread(input_image)
     # Applaying Gaussian Blur on input image
     image_blurred = cv2.GaussianBlur(image, (25, 25),0)
@@ -38,8 +39,11 @@ def main(input_image):
     image_morph = process.morph(image_conn, kernel=(11,11), show=False)
     # Remove smalls blobs
     image_conn = process.component(image_morph, min_size= 750, show=False)
+
+    # Normalize the pixel values in the image
     image_norm = cv2.normalize(image_conn, None, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX, dtype=cv2.CV_8UC1)
 
+    # croping the image
     l, r = process.findroi(image_norm)
     image_norm_crop = image_norm[1:1024,l:r]
     # Merge pixels using opencv closing morphology functions
