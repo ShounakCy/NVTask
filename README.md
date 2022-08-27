@@ -11,17 +11,17 @@
 `main.py`
 1. Read input image
 2. Applying Gaussian Blur on input image
-3. Applaying Sobel Edge detections
+3. Applying Sobel Edge detections
 4. Converting image from BGR to Gray
 5. Applying blurring again and thresholding the image
-6. Merging pixels using opencv closing morphology functions
-7. Removing smalls blobs
+6. Merging pixels using opencv closing Morphology functions
+7. Remove smalls blobs
 8. Performing step 6 and 7 again with bigger kernel and increasing the minimum size of blob
 9. Normalizing the pixel values in the image using MIN_MAX method, helps in changing the pixel intensity and increasing the overall contrast.
 10. Cropping the required region ( this can be done at the veru starting as well, if we assume that the starting and ending pixel of the coating is same of all pixels)
-11. Removed remaining small blobs
+11. Remove remaining small blobs
 12. Output image with contours around the defect pathces and mask.
-![alt text](https://github.com/ShounakCy/NVTask/blob/main/code2flow_7ZgRlA.png)
+
 ## What are the main challenges you have faced?
 
 1. Differentiating the foil and coating was difficult
