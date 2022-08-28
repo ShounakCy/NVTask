@@ -5,6 +5,6 @@ if __name__ == '__main__':
         input_image = './NVTask/'+str(i)+'.jpg'
         
         defect = main(input_image)
-        cv2.imwrite('./NVTask/defected_data/defect_area'+str(4)+'.jpg', defect)
+        cv2.imwrite('./NVTask/output_data/defect_area'+str(4)+'.jpg', defect)
         
  

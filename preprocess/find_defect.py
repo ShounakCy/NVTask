@@ -8,6 +8,7 @@ def main(input_image):
     
     #Read image
     image = cv2.imread(input_image)
+    
     # Applaying Gaussian Blur on input image
     image_blurred = cv2.GaussianBlur(image, (25, 25),0)
     
@@ -46,6 +47,7 @@ def main(input_image):
     # croping the image
     l, r = process.findroi(image_norm)
     image_norm_crop = image_norm[1:1024,l:r]
+
     # Merge pixels using opencv closing morphology functions
     image_conn_crop = process.component(image_norm_crop, min_size= 250, show=False)
     defect_area = process.find_contours(image_conn_crop)
