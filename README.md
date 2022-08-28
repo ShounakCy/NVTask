@@ -23,6 +23,8 @@
 12. Output image with contours around the defect pathces and mask.
 
 ![alt text](https://github.com/ShounakCy/NVTask/blob/main/output_data/defect_area1.jpg)
+![alt text](https://github.com/ShounakCy/NVTask/blob/main/output_data/defect_area2.jpg)
+![alt text](https://github.com/ShounakCy/NVTask/blob/main/output_data/defect_area3.jpg)
 
 ## What are the main challenges you have faced?
 
