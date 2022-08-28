@@ -36,7 +36,7 @@
 
 1. If proper dataset was provided, following steps could've been performed:
     - Preparing the segmentation masks of the picture data. Segmentation maps could be created. The segmentation map should be able to identify the image's problematic areas.Therefore, to mark and annotate these regions as defects, we can make use of ellipses.
-    - Then UNet model, could be used for image segmentation tasks. The model will be able to localize the acquired context using upsampling techniques and comprehend the shapes, patterns, edges, and other features contained in the image.
+    - Then UNet model, could be used for image segmentation tasks. The model will be able to localize the acquired context using upsampling techniques and comprehend the shapes, patterns, edges, and other features contained in the image. The encoder which is a stack of CNN and pooling layers helps in understanding the and capture the contexts in the image, while the decoder is used to localise the the captured contexts.
 
 2. Tested with a simple CNN model by genearting new images from the defected images, to detect if the correct image is defective or not. `NN_method_extratest`
 
