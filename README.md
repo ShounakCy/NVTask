@@ -22,6 +22,8 @@
 11. Remove remaining small blobs
 12. Output image with contours around the defect pathces and mask.
 
+![alt text](https://github.com/ShounakCy/NVTask/blob/main/output_data/defect_area1.jpg)
+
 ## What are the main challenges you have faced?
 
 1. Differentiating the foil and coating was difficult
