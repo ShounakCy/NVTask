@@ -13,18 +13,19 @@ NVTask/ ....  top src dir
 
 
 ## Requirements
-
+```
 Packages installation guide: ``pip install -r requirement.txt``
 
 Please use Python3
+```
 
 ## Usage
-
+```
 1. Run  `python main.py` to process the image data and the data will be stored into `output_data/`.
-
+```
 
 ## How did you approach the problem?
-
+```
 ### Steps Involved (check `process.jpg` flowchat)
 `main.py`
 1. Read input image
@@ -43,25 +44,30 @@ Please use Python3
 ![alt text](https://github.com/ShounakCy/NVTask/blob/main/output_data/defect_area1.jpg)
 ![alt text](https://github.com/ShounakCy/NVTask/blob/main/output_data/defect_area2.jpg)
 ![alt text](https://github.com/ShounakCy/NVTask/blob/main/output_data/defect_area3.jpg)
+```
 
 ## What are the main challenges you have faced?
-
+```
 1. Differentiating the foil and coating was difficult
 2. Tuning was required to detect the defect in the third image
 3. Getting the correct region of interest was difficult in order to draw contours around the patches itself not on the foil. So if the position is fixed it will be easier.
+```
 
 ## What assumptions did you make?
-
+```
  Given the number of images , while creating the ROI one assumption was if the sum of pixel of a column across all the rows are above a certain limit then its the boundary of the foil. Also calculated the moving sum of the pixels starting from the center both ways and calculated the maximum difference in a certain window. Whichever amongst the two has the lower pixel value is where the image gets cropped.
+```
 
 ## What would you have done differently next time and with a larger dataset?
-
+```
 1. If proper dataset was provided, following steps could've been performed:
     - Preparing the segmentation masks of the picture data. Segmentation maps could be created. The segmentation map should be able to identify the image's problematic areas.Therefore, to mark and annotate these regions as defects, we can make use of ellipses.
     - Then UNet model, could be used for image segmentation tasks. The model will be able to localize the acquired context using upsampling techniques and comprehend the shapes, patterns, edges, and other features contained in the image. The encoder which is a stack of CNN and pooling layers helps in understanding the and capture the contexts in the image, while the decoder is used to localise the the captured contexts.
 
 2. Tested with a simple CNN model by genearting new images from the defected images, to detect if the correct image is defective or not. `NN_method_extratest`
+```
 
 ## What external factors would you change to make the task easier (camera, lighting, etc.)
-
+```
 In order to perform opencv techniques, I would keep the camera position fixed so that the croping of the coating could be fixed and constant illumination from the sides to avoid refecltion. I would keep coaxial forward lighting for detecting the defects, as it provides more uniform illumination than traditional lighting mode, while avoiding the reflection of the object.
+```
