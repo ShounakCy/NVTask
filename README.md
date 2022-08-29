@@ -3,11 +3,11 @@
 ## Directory Structure
 
 ```
-NVTask/ ....  src dir
+NVTask/ ....  top src dir
 |-- main.py ..................... main file to capture input and output image
 |-- preprocess ............. image processing folder containing handlers to find defect 
 |-- output_data ................ output images of defected data
-|-- NN_method_extratest ................ Extra test dine using CNN 
+|-- NN_method_extratest ................ Extra test done using CNN 
 |-- requirement.txt ............. Requirements for building
 ```
 
