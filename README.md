@@ -2,6 +2,7 @@
 
 ## Directory Structure
 
+```
 NVTask/ ....  src dir
 |-- main.py ..................... main file to capture input and output image
 |-- preprocess ............. image processing folder containing handlers to find defect 
