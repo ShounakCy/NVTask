@@ -1,8 +1,26 @@
 # NVTask
 
-## How to run
-1. pip install requirements.txt
-2. run  `python main.py`
+## Directory Structure
+-------------------
+```
+NVTask/ ....  src dir
+|-- main.py ..................... main file to capture input and output image
+|-- preprocess ............. image processing folder containing handlers to find defect 
+|-- output_data ................ output images of defected data
+|-- NN_method_extratest ................ Extra test dine using CNN 
+|-- requirement.txt ............. Requirements for building
+```
+
+
+## Requirements
+------------
+Packages installation guide: ``pip install -r requirement.txt``
+
+Please use Python3
+
+## Usage
+
+1. Run  `python main.py` to process the image data and the data will be stored into `output_data/`.
 
 
 ## How did you approach the problem?
