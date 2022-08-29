@@ -1,8 +1,7 @@
 # NVTask
 
 ## Directory Structure
--------------------
-```
+
 NVTask/ ....  src dir
 |-- main.py ..................... main file to capture input and output image
 |-- preprocess ............. image processing folder containing handlers to find defect 
@@ -13,7 +12,7 @@ NVTask/ ....  src dir
 
 
 ## Requirements
-------------
+
 Packages installation guide: ``pip install -r requirement.txt``
 
 Please use Python3
